@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+{{ Form::model(${1:\$model}, ['route' => '${2:home}', 'role' => '${3:form}', 'class' => '${4:form}']) }}
+
+    {{ Form::errors() }}
+
+    ${0}
+
+{{ Form::close() }}]]></content>
+    <tabTrigger>Form::model</tabTrigger>
+</snippet>
