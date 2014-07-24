@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+{{ Form::open(['route' => '${1:home}', 'method' => '${2:POST}', 'role' => '${3:form}', 'class' => '${4:form}') }}
+
+    {{ Form::errors() }}
+
+    ${0}
+
+{{ Form::close() }}]]></content>
+    <tabTrigger>Form</tabTrigger>
+</snippet>
