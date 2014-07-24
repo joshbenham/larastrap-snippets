@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+@extends('core::admin.layouts.form')
+
+@section('content')
+
+	${0}
+
+@stop]]></content>
+    <tabTrigger>Extend::form</tabTrigger>
+</snippet>
