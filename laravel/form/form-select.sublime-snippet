@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<div class="form-group {{ \$errors->has('${1:name}') ? 'has-error' : '' }}${2: control-required}">
+    {{ Form::label('${1:name}', '${1/(\b)([a-z])/\1\u\2/g}') }}
+    {{ Form::select('${1:name}', ${3:\$model->getStatusTypes()}${4:, null}, [
+        'class'       => '${5:form-control}'${6:,
+        'required'    => 'required'}
+    ]) }}
+</div>]]></content>
+    <tabTrigger>Form::select</tabTrigger>
+</snippet>
