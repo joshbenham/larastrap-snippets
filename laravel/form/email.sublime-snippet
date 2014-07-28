@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<div class="form-group {{ \$errors->has('${1:name}') ? 'has-error' : '' }}${2: control-required}">
+    {{ Form::label('${1:name}', '${1/(\b)([a-z])/\1\u\2/g}') }}
+    {{ Form::email('${1:name}', ${3:null}, [
+        'class'       => '${4:form-control}',
+        'placeholder' => 'Please fill in your ${1/(\b)([a-z])/\1\u\2/g}'${5:,
+        'required'    => 'required'}
+    ]) }}
+</div>]]></content>
+    <tabTrigger>Form::email</tabTrigger>
+</snippet>
