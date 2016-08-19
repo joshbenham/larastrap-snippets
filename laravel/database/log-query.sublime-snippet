@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[ 
+\DB::listen(function ($query, $bindings, $time) {
+    \Log::info("[{$time}ms] Execution Time");
+    \Log::info($query, $bindings);
+    \Log::info("=========================================");
+});]]></content>
+    <tabTrigger>logquery</tabTrigger>
+</snippet>
