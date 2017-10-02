@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<div class="form-group {{ \$errors->has('${1:code}') ? 'has-error' : '' }}${2: control-required}">
+    {{ Form::label('${1:code}', '${1/(\b)([a-z])/\1\u\2/g}') }}
+    {{ Form::status('${1:code}', ${3:null}, ${4:0}) }}
+</div>]]></content>
+    <tabTrigger>Form::status</tabTrigger>
+</snippet>
